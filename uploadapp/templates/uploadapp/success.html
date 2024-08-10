@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Success</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'uploadapp/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>File Uploaded Successfully</h1>
+        <div class="table-container">
+            {{ summary|safe }}
+        </div>
+    </div>
+</body>
+</html>
