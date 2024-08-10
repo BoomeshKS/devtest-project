@@ -3,7 +3,72 @@
 <html>
 <head>
     <title>Upload Success</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'uploadapp/styles.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .summary-table th, .summary-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .summary-table th {
+            background-color: lightblue;
+            font-weight: bold;
+        }
+
+        .summary-table tr:nth-child(even) {
+            background-color: rgb(225, 240, 246);
+            transition: all 0.3s;
+        }
+
+        .summary-table tr:nth-child(even):hover {
+            transform: scale(1.03);
+            background-color: #75c4f2;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .summary-table tr:nth-child(odd):hover {
+            transform: scale(1.03);
+            transition: all 0.3s;
+            background-color: rgb(241, 239, 239);
+            cursor: pointer;
+        }
+
+        pre {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 4px;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
