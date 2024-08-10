@@ -31,7 +31,8 @@ SECRET_KEY = 'django-insecure-&uiq*0a#&4pm6$&35vk3%7161k^o0e-z3k+#49by0_s89q3ut4
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['devtest-project.onrender.com']
 
 
 
